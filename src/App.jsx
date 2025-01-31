@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import { Route, Routes, useLocation } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -13,6 +14,7 @@ import TermsAndServices from "./pages/TermsAndServices";
 import Account from "./pages/Account";
 import NotFound from "./pages/NotFound";
 import SharedLayout from "./components/SharedLayout";
+import "./App.css";
 import "./styles/truetalk.scss";
 import Admin from "./pages/Admin";
 import Header_Footer from "./components/Header_Footer";

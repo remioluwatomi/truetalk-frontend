@@ -1,0 +1,241 @@
+// @import url('./cart.scss');
+
+// header {
+//   div.header-wrapper {
+//     @apply bg-[#060340];
+//   }
+
+//   #logo-login-wrapper,
+//   #tab-nav > div {
+//     @apply w-[95%] mx-auto;
+
+//     @media (max-width: 1200px) {
+//       @apply max-w-[990px];
+//     }
+
+//     @media (max-width: 770px) {
+//       @apply max-w-[570px];
+//     }
+
+//     @media (min-width: 1200px) {
+//       @apply max-w-[1190px];
+//     }
+//   }
+
+//   @media (min-width: 570px) {
+//     #logo-div {
+//       img {
+//         @apply min-w-[200px];
+//       }
+//     }
+//   }
+
+//   #cart-search {
+//     input {
+//       border-radius: 8px;
+//     }
+//   }
+
+//   #search-btn,
+//   #mobile-search-btn {
+//     @apply absolute top-[25%] right-[5%];
+
+//     svg {
+//       @apply fill-[gray] text-[1.2rem];
+//     }
+//   }
+
+//   #logo-div {
+//     @apply w-[10rem];
+//   }
+
+//   @media (max-width: 750px) {
+//     #hamburger-login {
+//       #get-in-touch {
+//         display: none;
+//       }
+//     }
+//   }
+
+//   @media (max-width: 999px) {
+//     #cart-search {
+//       display: none;
+//     }
+
+//     #tab-nav {
+//       display: none;
+//     }
+//   }
+
+//   @media (min-width: 1000px) {
+//     #hamburger-login {
+//       display: none;
+//     }
+
+//     div.header-wrapper {
+//       @apply bg-black;
+//     }
+//   }
+// }
+
+// // Hamburger Styles
+// #hamburger-login {
+//   button {
+//     @apply mr-[15px] w-[50px] flex items-center justify-center h-[50px];
+
+//     svg {
+//       @apply text-[1.3rem];
+//     }
+//   }
+
+//   #get-in-touch {
+//     @apply w-[150px];
+//   }
+// }
+
+// .hamburger-menu {
+//   flex-direction: column;
+//   align-items: flex-end;
+
+//   #menu-button {
+//     transform-origin: center;
+//     transition: transform 0.3s ease-in-out;
+//   }
+
+//   .open {
+//     #menu-button {
+//       transform: rotate(90deg) translateX(5px);
+//     }
+//   }
+// }
+
+
+
+
+
+
+
+
+
+
+
+@import url('./cart.scss');
+
+header {
+    div.header-wrapper {
+        background-color: #060340;
+    }
+
+    #logo-login-wrapper,
+    #tab-nav > div {
+        width: 95%;
+        margin: 0 auto;
+
+        @media (max-width: 1200px) {
+            max-width: 990px;
+        }
+
+        @media (max-width: 770px) {
+            max-width: 570px;
+        }
+
+        @media (min-width: 1200px) {
+            max-width: 1190px;
+        }
+    }
+
+    @media (min-width: 570px) {
+        #logo-div {
+            img {
+                min-width: 200px;
+            }
+        }
+    }
+
+    #cart-search {
+        input {
+            border-radius: 8px;
+        }
+    }
+
+    #search-btn,
+    #mobile-search-btn {
+        position: absolute;
+        top: 25%;
+        right: 5%;
+
+        svg {
+            fill: gray;
+            font-size: 1.2rem;
+        }
+    }
+
+    #logo-div {
+        width: 10rem;
+    }
+
+    @media (max-width: 750px) {
+        #hamburger-login {
+            #get-in-touch {
+                display: none;
+            }
+        }
+    }
+
+    @media (max-width: 999px) {
+        #cart-search {
+            display: none;
+        }
+
+        #tab-nav {
+            display: none;
+        }
+    }
+
+    @media (min-width: 1000px) {
+        #hamburger-login {
+            display: none;
+        }
+
+        div.header-wrapper {
+            background-color: black;
+        }
+    }
+}
+
+/* Hamburger Styles */
+#hamburger-login {
+    button {
+        margin-right: 15px;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+            font-size: 1.3rem;
+        }
+    }
+
+    #get-in-touch {
+        width: 150px;
+    }
+}
+
+.hamburger-menu {
+    flex-direction: column;
+    align-items: flex-end;
+
+    #menu-button {
+        transform-origin: center;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .open {
+        #menu-button {
+            transform: rotate(90deg) translateX(5px);
+        }
+    }
+}
+

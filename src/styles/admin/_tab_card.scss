@@ -1,0 +1,73 @@
+.tab-card {
+  .img-wrap > img {
+    object-fit: cover;
+  }
+  overflow-y: hidden;
+  width: 90%;
+  max-width: 340px;
+  height: fit-content;
+  margin: 1rem auto;
+  box-shadow: 0 2px 6px 0 rgba(67, 89, 113, 0.12);
+}
+
+.tab-card > *:not(.tab-card > div:first-child) {
+  padding: 1rem;
+}
+
+.tab-section-wrappers,
+.tab-card {
+  border-radius: 10px;
+}
+
+.tab-section-wrappers {
+  width: 90%;
+  margin: 1rem auto 0;
+}
+
+@media (min-width: 750px) {
+  #tab-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .tab-section-wrappers {
+    max-width: 800px;
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 1120px) {
+  #tab-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .tab-section-wrappers {
+    max-width: 1200px;
+  }
+}
+
+.tab-card-btn {
+  color: white;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+
+  svg {
+    fill: white;
+  }
+  .delete-resource {
+    background-color: red;
+  }
+  .edit-resource {
+    margin-left: auto;
+  }
+}
+
+.tab-card-btn-w-h {
+  width: 6rem;
+  height: 40px;
+  border-radius: 7px;
+}
+
+.tab-card-skeleton {
+  @media (max-width: 1200px) {
+    margin: 10px auto;
+  }
+}

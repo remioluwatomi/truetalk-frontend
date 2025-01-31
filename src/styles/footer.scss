@@ -1,0 +1,456 @@
+// #socials {
+//     li {
+//         a {
+//             background-color: #181108;
+//             border-radius: 50%;
+//             transition: background-color 0.3s ease;
+//             @apply w-[40px] h-[40px] block;
+
+//             &:hover {
+//                 background-color: #154ea4;
+//                 svg {
+//                     fill: white;
+//                 }
+//             }
+
+//             svg {
+//                 fill: #154ea4;
+//                 translate: 0 50%;
+//                 transition: fill 0.3s ease;
+//                 @apply w-[50%] h-[50%] mx-auto;
+//             }
+//         }
+//     }
+// }
+
+// footer {
+//     nav {
+//         h4 {
+//             @apply text-[#03a9f4] font-[500];
+//         }
+
+//         #webLinks,
+//         #webResourceLinks,
+//         #footer-contact > ul > li {
+//             font-size: .9rem;
+
+//             .footer-entity {
+//                 @apply text-[#154da4] font-[700];
+//             }
+
+//             a {
+//                 transition: color 0.3s ease;
+//                 &:hover {
+//                     @apply text-[#154ea4];
+//                 }
+//             }
+//         }
+
+//         #webLinks a,
+//         #webResourceLinks a,
+//         #footer-contact li {
+//             margin-top: 15px;
+//         }
+//     }
+
+//     #footer-contact {
+//         ul {
+//             .contact-list {
+//                 @apply flex items-center;
+
+//                 svg {
+//                     @apply text-[1.5rem];
+//                 }
+
+//                 a {
+//                     @apply text-[#154ea4];
+
+//                     &:hover {
+//                         @apply text-[#e58c23];
+//                     }
+//                 }
+//             }
+//         }
+//     }
+
+//     #footer-bottom {
+//         @apply mt-[70px];
+//         small {
+//             @apply py-[20px] px-[30px] block text-[.9rem];
+//         }
+//     }
+// }
+
+// @media (min-width:350px) {
+//     footer {
+//         nav {
+//             #webLinks a,
+//             #webResourceLinks a,
+//             #footer-contact li {
+//                 .footer-entity {
+//                     @apply mr-2;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// @media (min-width:380px) {
+//     footer {
+//         nav {
+//             #webLinks a,
+//             #webResourceLinks a,
+//             #footer-contact li {
+//                 .footer-entity {
+//                     @apply mr-3;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// @media (min-width:450px) {
+//     footer {
+//         nav > div:first-child {
+//             @apply gap-[4rem];
+//         }
+
+//         nav {
+//             h4 {
+//                 @apply text-[1.2rem];
+//             }
+
+//             a {
+//                 @apply text-[1rem];
+//             }
+
+//             #webLinks a,
+//             #webResourceLinks a,
+//             #footer-contact li {
+//                 .footer-entity {
+//                     @apply mr-3;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// @media (min-width:520px) {
+//     footer {
+//         nav > div:first-child {
+//             @apply gap-[7rem];
+//         }
+//     }
+// }
+
+// @media (min-width:700px) {
+//     footer {
+//         nav > div:first-child {
+//             @apply gap-[12rem];
+//         }
+//     }
+// }
+
+// @media (min-width:820px) {
+//     footer {
+//         nav {
+//             @apply flex items-baseline justify-center;
+//         }
+//         nav,
+//         nav > div:first-child {
+//             @apply gap-[6rem];
+//         }
+//     }
+// }
+
+// @media (max-width:820px) {
+//     footer {
+//         #footer-contact {
+//             @apply mt-10;
+//         }
+
+//         #footer-bottom {
+//             @apply text-center;
+//         }
+//     }
+// }
+
+// @media (max-width:1200px) {
+//     #footer-bottom {
+//         @apply text-center;
+//     }
+// }
+
+// @media (min-width:1200px) {
+//     footer > div:first-child {
+//         @apply flex items-center max-w-[1300px] mx-auto;
+
+//         #who-am-i {
+//             @apply text-left;
+//         }
+
+//         #socials {
+//             @apply w-[90%] justify-start gap-4;
+//         }
+//     }
+
+//     #footer-logo-socials {
+//         @apply w-[40%];
+//     }
+
+//     footer {
+//         nav {
+//             h4 {
+//                 @apply text-[1.35rem];
+//             }
+//             a {
+//                 @apply text-[1.1rem];
+//             }
+//         }
+//     }
+// }
+
+
+
+
+
+#socials {
+  li {
+      a {
+          background-color: #181108;
+          border-radius: 50%;
+          transition: background-color 0.3s ease;
+          width: 40px;
+          height: 40px;
+          display: block;
+
+          &:hover {
+              background-color: #154ea4;
+              svg{
+                fill: white;
+              }
+          }
+
+          svg {
+              fill: #154ea4;
+              transform: translateY(50%);
+              transition: fill 0.3s ease;
+              width: 50%;
+              height: 50%;
+              margin: 0 auto;
+          }
+      }
+  }
+}
+
+footer {
+  nav {
+      h4 {
+          color: #03a9f4;
+          font-weight: 500;
+      }
+
+      #webLinks,
+      #webResourceLinks,
+      #footer-contact > ul > li {
+          font-size: 0.9rem;
+
+          .footer-entity {
+              color: #154da4;
+              font-weight: 700;
+          }
+
+          a {
+              transition: color 0.3s ease;
+
+              &:hover {
+                  color: #154ea4;
+              }
+          }
+      }
+
+      #webLinks a,
+      #webResourceLinks a,
+      #footer-contact li {
+          margin-top: 15px;
+      }
+  }
+
+  #footer-contact {
+      ul {
+          .contact-list {
+              display: flex;
+              align-items: center;
+              gap: .5rem;
+
+              svg {
+                  font-size: 1.5rem;
+              }
+
+              a {
+                  color: #154ea4;
+
+                  &:hover {
+                      color: #e58c23;
+                  }
+              }
+          }
+      }
+  }
+
+  #footer-bottom {
+      margin-top: 70px;
+
+      small {
+          padding: 20px;
+          padding-left: 30px;
+          display: block;
+          font-size: 0.9rem;
+      }
+  }
+}
+
+@media (min-width: 350px) {
+  footer {
+      nav {
+          #webLinks a,
+          #webResourceLinks a,
+          #footer-contact li {
+              .footer-entity {
+                  margin-right: 2px;
+              }
+          }
+      }
+  }
+}
+
+@media (min-width: 380px) {
+  footer {
+      nav {
+          #webLinks a,
+          #webResourceLinks a,
+          #footer-contact li {
+              .footer-entity {
+                  margin-right: 3px;
+              }
+          }
+      }
+  }
+}
+
+@media (min-width: 450px) {
+  footer {
+      nav > div:first-child {
+          gap: 4rem;
+      }
+
+      nav {
+          h4 {
+              font-size: 1.2rem;
+          }
+
+          a {
+              font-size: 1rem;
+          }
+
+          #webLinks a,
+          #webResourceLinks a,
+          #footer-contact li {
+              .footer-entity {
+                  margin-right: 3px;
+              }
+          }
+      }
+  }
+}
+
+@media (min-width: 520px) {
+  footer {
+      nav > div:first-child {
+          gap: 7rem;
+      }
+  }
+}
+
+@media (min-width: 700px) {
+  footer {
+      nav > div:first-child {
+          gap: 12rem;
+      }
+  }
+}
+
+@media (min-width: 820px) {
+  footer {
+      nav {
+          display: flex;
+          align-items: baseline;
+          justify-content: center;
+          gap: 4rem;
+      }
+      nav > div:first-child {
+          gap: 6rem;
+      }
+  }
+}
+
+@media (min-width: 850px) {
+    footer{
+        nav {
+            gap: 6rem;
+        }
+    }
+  }
+
+@media (max-width: 820px) {
+  footer {
+      #footer-contact {
+          margin-top: 50px;
+      }
+
+      #footer-bottom {
+          text-align: center;
+      }
+  }
+}
+
+@media (max-width: 1200px) {
+  #footer-bottom {
+      text-align: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  footer > div:first-child {
+      display: flex;
+      align-items: center;
+      max-width: 1300px;
+      margin: 0 auto;
+
+      #who-am-i {
+          text-align: left;
+      }
+
+      #socials {
+          width: 90%;
+          justify-content: flex-start;
+          gap: 1rem;
+      }
+  }
+
+  #footer-logo-socials {
+      width: 40%;
+  }
+
+  footer {
+      nav {
+          h4 {
+              font-size: 1.35rem;
+          }
+          a {
+              font-size: 1.1rem;
+          }
+      }
+  }
+}
+

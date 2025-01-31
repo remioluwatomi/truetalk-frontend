@@ -9,7 +9,6 @@ function Header_Footer({ updatePage, page }) {
   return (
     <>
       <Header />
-
       <BookCtxtProvider>
         <Outlet context={{ updatePage, page }} />
       </BookCtxtProvider>

@@ -1,0 +1,131 @@
+.add-edit-input-wrapper {
+  padding-bottom: 65px;
+  p.error {
+    color: red;
+  }
+
+  @media (min-width: 1200px) {
+    &:not(.add-edit-input-wrapper.video) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6rem;
+    }
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 90%;
+    // height: 100%;
+    top: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 0;
+  }
+
+  &.video {
+    @media (min-width: 1200px) {
+      top: 5rem;
+    }
+  }
+
+  div.img-wrapper,
+  form > div.input-wrapper {
+    width: 85%;
+    max-width: 500px;
+
+    @media (min-width: 700px) {
+      max-width: 600px;
+    }
+    @media (max-width: 1200px) {
+      margin: 0 auto;
+    }
+    &.video {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  form > div.input-wrapper {
+    width: 85%;
+    @media (min-width: 1200px) {
+      width: 100%;
+    }
+  }
+
+  div.img-wrapper {
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 500px;
+    // @media (min-width: 700px) {
+    //   max-width: 600px;
+    // }
+    img {
+      margin: 0 auto;
+    }
+  }
+
+  div.img-wrapper,
+  div.input-wrapper.add-edit-vid:first-child {
+    @media (max-width: 1200px) {
+      margin-top: 75px;
+    }
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    left: 0;
+    right: 0;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    height: 65px;
+    padding: 20px 0;
+  }
+  input,
+  textarea {
+    color: #697a8d;
+    border: 1px solid #d9dee3;
+    border-radius: 6px;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+  textarea {
+    min-height: 90px;
+    &:focus {
+      outline: none;
+    }
+  }
+  input:not(input[type="file"]) {
+    min-height: 40px;
+  }
+
+  .btn-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: right;
+    background-color: white;
+
+    button {
+      @media (min-width: 1200px) {
+        font-size: 1.2rem;
+      }
+      color: white;
+      margin: 8px;
+      padding: 10px;
+      width: 120px;
+    }
+    .add-edit-cancel-btn {
+      background-color: #8592a3;
+      padding: 0;
+    }
+  }
+}

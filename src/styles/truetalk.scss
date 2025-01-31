@@ -1,0 +1,63 @@
+@import "./index.scss";
+@import "./header.scss";
+@import "./footer.scss";
+@import "./mobile_nav.scss";
+@import "./newsletter";
+
+*,
+body {
+  font-family: Poppins, sans-serif;
+}
+
+input {
+  outline: none;
+  border: none;
+
+  &:focus {
+    outline: none;
+    border: none;
+  }
+}
+
+.blue-btn {
+  border-radius: 7px;
+}
+
+.transition-color {
+  transition: color 0.4s ease;
+
+  &:hover {
+    color: #154ea4;
+  }
+}
+
+.orange-text-hover,
+#mobile-nav ul a svg {
+  @extend .transition-color;
+}
+
+#mobile-nav ul a svg {
+  @extend .transition-color;
+  &:hover {
+    color: #e58c23;
+  }
+}
+
+button {
+  &.btn-transition-hover {
+    transition: transform 0.3s ease;
+    &:hover {
+      transform: translate(0, -3px);
+    }
+  }
+}
+
+.disabled-opacity::after {
+  content: "";
+  z-index: 10;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  background-color: hsla(213.6deg, 14.29%, 65.69%, 0.4);
+}

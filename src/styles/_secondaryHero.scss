@@ -1,0 +1,23 @@
+h2#secondary-hero-header{
+    @media (min-width:770px) {
+        font-size: 3rem;
+    }
+
+    @media (min-width:1000px) {
+        font-size: 4rem;
+    }
+}
+
+div#secondary-hero-div{
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        // background-color: rgba(26 22 104 1);
+        background-color: rgba(22, 25, 83, .8); 
+    }
+}
