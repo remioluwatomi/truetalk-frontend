@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react";
 import fetchData from "../utils/fetchData";
+import { fetchDataFromSupabase } from "../supabase/supabase";
 
 export default function useFetchedData({ tabToFetchFrom, setLoading }) {
   const [data, setData] = useState([]);
+  // const [useSupabase, setUseSupabase] = useState(false);
+  const useSupabase = import.meta.env.VITE_USE_SUPABASE;
 
   const handleFilteredData = (resourceId) => {
     const filterFetchedData = () => {
@@ -32,11 +35,18 @@ export default function useFetchedData({ tabToFetchFrom, setLoading }) {
           return;
         }
 
-        const fetchedData = await fetchData(
-          tabToFetchFrom,
-          newController.signal
-        );
-        setData(fetchedData);
+        if (useSupabase === "true") {
+          const { data, error } = await fetchDataFromSupabase(tabToFetchFrom);
+
+          if (error) throw new Error("couldn't fetch from supabase");
+          else setData(data);
+        } else {
+          const fetchedData = await fetchData(
+            tabToFetchFrom,
+            newController.signal
+          );
+          setData(fetchedData);
+        }
       } catch (err) {
         console.log(err);
         setData([]);

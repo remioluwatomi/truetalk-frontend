@@ -1,0 +1,100 @@
+.about-card{
+    
+    
+    
+    
+    svg{
+        color: #1a1668;
+        font-size: 3rem;
+    }
+
+}
+
+#about-cards{
+    .about-card{
+        padding: 20px 1.5rem;
+        width: 90%;
+        margin: 40px auto;
+        border-radius: 15px;
+        transition: all 500ms ease-in;
+        outline: none;
+
+        &:hover{
+            transform: translateY(-7%);
+            outline: 2px solid #154ea4;
+        }
+
+        @media (min-width: 575px) {
+            width: 500px;
+        }
+
+        @media (min-width:770px) {
+            width: 25rem;
+            margin: 0;
+        }
+    }
+
+    @media (min-width:770px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+    }
+
+}
+
+#hero-jpg-div, #about-content{
+    @media (min-width:575px) {
+        width: 520px;
+    }
+
+    @media (min-width:770px) {
+        width: 700px;
+    } 
+}
+
+#about-ul{
+    margin-left: auto;
+    margin-right: auto;
+    
+    @media (min-width:575px) {
+        width: 400px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+section#about-section > div:first-child{
+    @media (min-width:1000px) {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        width: 930px;
+        margin: 0 auto;
+
+        #hero-jpg-div, #about-content{
+            width: 50%;
+        }
+    }
+
+    @media (min-width:1200px) {
+        width: 1170px;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    p{
+        font-size: .9rem;
+    }
+
+    
+    @media (min-width: 770px) {
+        h2{
+            font-size: 2.5rem;
+        }
+
+        p{
+            font: 1rem;
+        }
+    }
+}

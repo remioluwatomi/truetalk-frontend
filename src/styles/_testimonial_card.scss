@@ -1,0 +1,135 @@
+.bg-testimonial-section {
+  .swiper-pagination {
+    bottom: 0;
+    position: inherit;
+  }
+
+  #testimonial-div-header {
+    @media (max-width: 770px) {
+      max-width: 550px;
+      margin: 0 auto;
+    }
+  }
+
+  #testimonial-h {
+    @media (min-width: 770px) {
+      font-size: 2rem;
+    }
+  }
+
+  #testimonial-p {
+    @media (max-width: 1000px) {
+      display: none;
+    }
+  }
+
+  .swiper-initialized {
+    margin-top: -20px;
+  }
+}
+
+/* Styles for the testimonial card */
+.testimonial-card {
+  background-color: #fff;
+  margin: 0 auto;
+  max-width: 560px;
+  padding: 50px 3rem;
+  margin-top: 50px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+
+  @media screen and (min-width: 768px) {
+    padding: 50px 2rem;
+    margin-top: 50px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    padding: 50px 3rem;
+    margin-top: 50px;
+  }
+
+  p {
+    font-weight: 500;
+  }
+
+  .relative {
+    margin-top: 30px;
+
+    .flex {
+      max-width: 200px;
+      gap: 1rem;
+
+      .w-4rem {
+        width: 4rem;
+        margin-right: auto;
+      }
+
+      h4 {
+        font-weight: 700;
+        font-size: 1.2rem;
+      }
+    }
+
+    .absolute {
+      color: #ff4d30;
+      display: none;
+      font-size: 3rem;
+      right: 5%;
+      bottom: 10%;
+
+      &.testimonials-quote {
+        display: block;
+      }
+    }
+  }
+}
+
+/* Styles for the Swiper navigation buttons */
+.swiper-button-next,
+.swiper-button-prev {
+  color: white;
+  background-color: #154ea4;
+  width: 40px;
+  height: 100%;
+  border-radius: 50%;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // position: absolute;
+  // top: 10%;
+  // transform: translateY(-50%);
+  position: inherit;
+  z-index: 10;
+
+  &::after {
+    font-size: 1rem;
+  }
+
+  .swiper-button-next {
+    right: 1rem;
+  }
+
+  .swiper-button-prev {
+    left: 1rem;
+  }
+}
+
+.testimonial-card:hover,
+.swiper-slide-active > div {
+  background-color: #154ea4;
+  color: white;
+
+  svg.star-icon.golden {
+    color: white;
+  }
+}
+
+svg.star-icon {
+  color: rgb(153, 148, 148);
+}
+
+svg.star-icon.golden {
+  color: #ffa808;
+}

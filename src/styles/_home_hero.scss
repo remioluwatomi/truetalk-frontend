@@ -1,0 +1,144 @@
+a {
+  cursor: pointer;
+}
+
+section#hero {
+  color: white;
+  margin-bottom: 50px;
+
+  #for-bg {
+    width: 100%;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(
+      22,
+      25,
+      83,
+      0.9
+    ); /* Adjust the color and opacity here */
+    z-index: 1; /* Ensure the pseudo-element is above the content */
+  }
+
+  h3 {
+    letter-spacing: 0.6rem;
+    margin-bottom: 10px;
+    color: #cb9dc7;
+  }
+
+  .who-am-i-hero {
+    @media (max-width: 575px) {
+      display: none;
+    }
+  }
+
+  .animated-div {
+    transition: transform 500ms, transform 1000ms;
+    transform: translateX(-100%);
+  }
+
+  .animated-div.active {
+    transform: translateX(0);
+  }
+
+  #hero-content-wrapper {
+    @media (min-width: 575px) {
+      &.no-books {
+        width: 550px;
+      }
+
+      h3 {
+        font-size: 1.3rem;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+    }
+
+    @media (min-width: 770px) {
+      &.no-books {
+        width: 720px;
+      }
+    }
+
+    @media (min-width: 999px) {
+      h1 {
+        font-size: 2.5rem;
+      }
+      .who-am-i-hero span {
+        font-size: 1.1rem;
+      }
+    }
+
+    @media (min-width: 1199px) {
+      width: 500px;
+      h1 {
+        font-size: 2.93rem;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+      }
+      .who-am-i-hero span {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  #books-details {
+    transform: translateY(-20%);
+    touch-action: pan-x;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    /* WebKit (Chrome, Safari) */
+    ::-webkit-scrollbar {
+      // width: 12px;
+      display: none;
+    }
+
+    // ::-webkit-scrollbar-track {
+    //   background-color: #f1f1f1;
+    //   border-radius: 10px;
+    // }
+
+    // ::-webkit-scrollbar-thumb {
+    //   background-color: #b9a2a2;
+    //   border-radius: 10px;
+    // }
+
+    /* Firefox */
+    // scrollbar-width: thin;
+    // scrollbar-color: #585050 #f1f1f1;
+
+    img {
+      border-radius: 7px;
+    }
+
+    a > div {
+      border-radius: 10px;
+
+      svg {
+        color: #ffa808;
+      }
+    }
+
+    @media (max-width: 999px) {
+      display: none;
+    }
+  }
+}
+
+#hero > div {
+  @media (min-width: 999px) {
+    display: flex;
+    align-items: flex-end;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    padding-left: 5rem;
+  }
+}
