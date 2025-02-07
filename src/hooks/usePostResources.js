@@ -10,7 +10,7 @@ export default function usePostResources({
   setImplementedPostHook,
 }) {
   const [response, setResponse] = useState({});
-  const useSupabase = process.env.REACT_APP_USE_SUPABASE;
+  const useSupabase = import.meta.env.VITE_USE_SUPABASE;
   useEffect(() => {
     const postResource = async () => {
       if (!resourceToPost || !tabToPostTo) return;

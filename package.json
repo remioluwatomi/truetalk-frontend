@@ -21,6 +21,7 @@
     "react-router-dom": "^7.1.4",
     "spinners-react": "^1.0.10",
     "swiper": "^11.2.1",
+    "formik": "^2.4.5",
     "yup": "^1.6.1"
   },
   "devDependencies": {
