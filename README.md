@@ -50,6 +50,41 @@ To get a local copy up and running follow these simple steps:
 
    ```
 
+4. **Environment Variables Configuration**
+
+To run this project, you need to provide the following environment variables in a `.env` file at the root of your project.
+
+### Required Variables
+
+Create a `.env` file and add the following lines:
+
+```env
+VITE_SERVER_BASE_URL=
+
+#if using supabase, ensure you set your supabase variables:
+VITE_SUPABASE_PASSKEY=
+VITE_SUPABASE_PROJECT_NAME=
+VITE_SUPABASE_URL=
+VITE_USE_SUPABASE=true
+```
+
+### Description of Variables
+
+- **VITE_SERVER_BASE_URL**: The base URL of your backend server. You can clone (https://github.com/remioluwatomi/truetalk-backend.git).
+
+#### For supabase config:
+
+- **VITE_SUPABASE_PASSKEY**: The API passkey for Supabase authentication.
+- **VITE_SUPABASE_PROJECT_NAME**: The name of your Supabase project.
+- **VITE_SUPABASE_URL**: The URL of your Supabase instance.
+- **VITE_USE_SUPABASE**: Set to `true` if you want to enable Supabase; otherwise, set it to `false`.
+
+### Steps to Set Up
+
+- Copy the above variables into a new `.env` file in your project root.
+- Fill in the values as per your configuration.
+- Restart your development server to apply the changes.
+
 4. **Run the application**
 
    ```
