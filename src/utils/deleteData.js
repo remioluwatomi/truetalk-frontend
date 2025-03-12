@@ -6,7 +6,7 @@ export default async function deleteData(tab, resourceId) {
       method: "DELETE",
     };
     const response = await fetch(
-      `${process.env.REACT_APP_SERVER_BASE_URL}/${tab}s/${encodeURIComponent(
+      `${import.meta.env.VITE_SERVER_BASE_URL}/${tab}s/${encodeURIComponent(
         resourceId
       )}`,
       requestOptions
