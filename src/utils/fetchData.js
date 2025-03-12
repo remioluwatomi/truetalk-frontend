@@ -6,7 +6,7 @@ export default async function fetchData(path, signal) {
 
   try {
     const response = await fetch(
-      `${process.env.REACT_APP_SERVER_BASE_URL}/${path}s`,
+      `${import.meta.env.VITE_SERVER_BASE_URL}/${path}s`,
       { signal }
     );
     if (response.ok) {
