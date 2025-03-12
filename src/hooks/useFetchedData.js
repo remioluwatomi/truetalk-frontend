@@ -21,8 +21,6 @@ export default function useFetchedData({ tabToFetchFrom, setLoading }) {
     setData(result);
   };
 
-  let calling = 1;
-
   useEffect(() => {
     const newController = new AbortController();
 

@@ -1,0 +1,29 @@
+#disclaimer-wrapper-section {
+  background-color: #1f2329;
+  color: white;
+}
+
+#disclaimer-wrapper-section > {
+  div {
+    @media (max-width: 769px) {
+      max-width: 500px;
+    }
+    margin: 0 auto;
+    width: 90%;
+
+    @media (min-width: 770px) {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-left: 2rem;
+    }
+  }
+
+  div > {
+    @media (min-width: 770px) {
+      div:first-child {
+        width: 50%;
+      }
+    }
+  }
+}

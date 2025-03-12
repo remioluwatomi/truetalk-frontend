@@ -1,0 +1,25 @@
+#contact-feedback {
+  h3 {
+    font-size: 1.09rem;
+  }
+  button#feedback-btn {
+    width: 10%;
+    margin-left: auto;
+  }
+}
+
+#contact-feedback.delivered {
+  h3,
+  svg {
+    color: #2a6817;
+    fill: #2a6817;
+  }
+}
+
+#contact-feedback.not-delivered {
+  h3,
+  svg {
+    color: #721c24;
+    fill: #721c24;
+  }
+}

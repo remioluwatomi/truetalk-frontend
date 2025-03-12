@@ -20,7 +20,7 @@ export default async function postData(tab, values, newUpload) {
 
   try {
     const response = await fetch(
-      `${process.env.REACT_APP_SERVER_BASE_URL}/${tab}s`,
+      `${import.meta.env.VITE_SERVER_BASE_URL}/${tab}s`,
       requestOptions
     );
     const result = await response.json();

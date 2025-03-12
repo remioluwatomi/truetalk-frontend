@@ -73,7 +73,7 @@ function Header(props) {
               <input
                 type="text"
                 placeholder="Search Books Here"
-                className="text-black min-w-[450px] h-[50px] px-[20px]"
+                className="text-black min-w-[450px] h-[50px] px-[20px] bg-white"
               />
               <button id="search-btn">
                 <FaSearch className="" />
